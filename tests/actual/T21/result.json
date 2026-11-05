@@ -1,0 +1,13 @@
+{
+  "id": "T21",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/full-review-candidates.json",
+    "output/FULL_REVIEW_PREVIEW.md"
+  ],
+  "duration_seconds": 155.4,
+  "skill_read_observed": true,
+  "trace_sha256": "7df5e104be7aa96e7d7a562d498bba0aa094d9ebcdf1116305bfd3bce4cada3f",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:55:40+00:00",
+  "scope": "full-review",
+  "target": "generic",
+  "review_status": "candidate",
+  "sources": [
+    {
+      "id": "src-001",
+      "label": "input/notes.txt",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "purpose",
+      "content": "Harbor is a local search project.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 1; speaker unspecified"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "preference",
+      "area": "user",
+      "scope": "work",
+      "subject": "user",
+      "key": "work.updates",
+      "content": "At work, the user prefers concise updates.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 2; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-003",
+      "category": "preference",
+      "area": "user",
+      "scope": "personal",
+      "subject": "user",
+      "key": "personal.learning.explanations",
+      "content": "For personal learning, the user prefers visual explanations.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 3; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

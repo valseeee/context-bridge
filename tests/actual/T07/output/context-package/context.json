@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:38:45+00:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "src-001",
+      "label": "input/decision.md",
+      "kind": "file",
+      "date": "2026-10-20"
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "decision",
+      "area": "decision",
+      "key": "storage.database",
+      "content": "The user confirmed SQLite for Harbor because the tool must work offline without a database server.",
+      "scope": "project",
+      "subject": "project:harbor",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 2, User; source date in line 1"
+        }
+      ],
+      "date": "2026-10-20",
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "constraint",
+      "area": "constraint",
+      "key": "runtime.offline",
+      "content": "Harbor must work offline without a database server.",
+      "scope": "project",
+      "subject": "project:harbor",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 2, User; source date in line 1"
+        }
+      ],
+      "date": "2026-10-20",
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

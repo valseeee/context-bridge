@@ -1,0 +1,16 @@
+{
+  "id": "T05",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/context.json",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/PREFERENCES.md",
+    "output/context-package/PROJECT_CONTEXT.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 273.99,
+  "skill_read_observed": true,
+  "trace_sha256": "d8738cf1d1ba96a03d579f32c5d8826ddaec9aff547f6a8ca383d37b58edf2f0",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

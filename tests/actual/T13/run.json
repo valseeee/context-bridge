@@ -1,0 +1,30 @@
+{
+  "case": "T13",
+  "started_at": "2026-11-05T04:43:20.335349+00:00",
+  "duration_seconds": 97.54,
+  "exit_code": 0,
+  "timed_out": false,
+  "trace_sha256": "0f1ee8613faff17faedb8827f9c840fc6a6fa3731d929172d27db7f3ebb15c23",
+  "skill_sha256": "97ec28ed0419bef1f9b9b1029f4deb6b78261ed8ffd352069a13da3e6454dcbf",
+  "skill_read_observed": true,
+  "input_hashes": {
+    "chat.txt": "26601052f073c4df26df693c41408469e46ae4a5659e24bc941cd8b0e56ee179"
+  },
+  "installed_skill_hashes": {
+    "agents/openai.yaml": "6459f613495b3d95ab7d71f80a211b4f72087a969c30e3b2ce930d4cb3d71259",
+    "examples/migration-example.md": "752120dad9ba6e46962c405a91c4cadc791276ed7f480594e38949dc3a148ecb",
+    "examples/project-context.md": "dabd0feab6a4e951c1b49e46917bdf597bfaefda5de8413720a58fb3a8ae8331",
+    "examples/project-handoff.md": "deefa47e12372aaf19c2da2cb075e7926370044f7720a5ff2c8d18f1d68544fb",
+    "examples/user-preferences.md": "b9495ce9c447243c71e099c2516db5a294d1d84b7349d50994656fb22738be8d",
+    "LICENSE": "251c31c131c76cb70229b9d952095ecdcbacac8831e23ea0c2edc92febeb963b",
+    "references/conflict-resolution.md": "35838214f53c2f121ed772119c464302dac55e9c6d2fd9fd81b3767f0b1390b7",
+    "references/context-classification.md": "667a34e6762c41929e55c5f974f780dd52fdfd235c7b0b4ca94e9038cd2a853e",
+    "references/context-distillation.md": "f1d3bcba7ad29e5b720de6786a30c1f44090a461685cdaff85f642dfa8db05d5",
+    "references/context.schema.json": "15dcc837d42afacbe55e3929529be59b87b4f7199f1f08c3a7b9f03c067ff257",
+    "references/package-schema.md": "23d7d034d16a7d3470966c421db7a86e3ad7540b2332ccae4595fe85df131fe1",
+    "references/portability-guide.md": "37106cefe431ffe223e1ed64e7f5ed3f81b18e253167458d712f4eb781f5a394",
+    "references/privacy-rules.md": "d1f4eb2c4f5d9327f8c9489ef4ff1492baccc874baa0e2178043da4aefec4a4d",
+    "scripts/context_package.py": "74155b8e6e479015336820eb4298a18fc803a7b31f9c8fbb9dc37ebe99f5cd7e",
+    "SKILL.md": "97ec28ed0419bef1f9b9b1029f4deb6b78261ed8ffd352069a13da3e6454dcbf"
+  }
+}

@@ -1,0 +1,2 @@
+User: Harbor searches a large local document collection.
+Assistant: I suspect an in-memory cache would improve query latency, but there are no benchmarks yet.

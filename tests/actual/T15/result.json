@@ -1,0 +1,12 @@
+{
+  "id": "T15",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/CLEANUP_PREVIEW.md"
+  ],
+  "duration_seconds": 257.27,
+  "skill_read_observed": true,
+  "trace_sha256": "21cf4d5b70ab005ae6e49eb57011494bf88c2aba25ef48c79790ff1d8df36778",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "T25",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [],
+  "duration_seconds": 82.02,
+  "skill_read_observed": true,
+  "trace_sha256": "a69a8d36393e2c2bf02b8513fe8568754f90bff72c851fa3d77031ea4b0183e0",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

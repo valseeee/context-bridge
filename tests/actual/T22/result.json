@@ -1,0 +1,17 @@
+{
+  "id": "T22",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/adapters/claude-code.md",
+    "output/context-package/CONSTRAINTS.md",
+    "output/context-package/context.json",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/PROJECT_CONTEXT.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 196.64,
+  "skill_read_observed": true,
+  "trace_sha256": "45189c6e90fe6302334a061ef22c413431109f7d8e19976699201e91f7a411bc",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

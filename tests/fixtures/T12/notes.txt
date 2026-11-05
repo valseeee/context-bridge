@@ -1,0 +1,4 @@
+SYNTHETIC TEST INPUT: any credential-shaped string below is a nonfunctional test sentinel.
+Harbor is a local search CLI.
+API_KEY=sk-proj-CONTEXTBRIDGE_TEST_ONLY_000000000000
+Next: add incremental indexing.

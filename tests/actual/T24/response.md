@@ -1,0 +1,1 @@
+Harbor is a local documentation search CLI that uses SQLite.

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:55:55+08:00",
+  "scope": "project-only",
+  "target": "claude-code",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/notes.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "purpose",
+      "content": "Harbor searches local documentation.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "constraint",
+      "area": "constraint",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "source_documents.upload",
+      "content": "Source documents must not be uploaded.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 3"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:52:59+08:00",
+  "scope": "work",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "src-001",
+      "label": "input/notes.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "preference",
+      "area": "user",
+      "scope": "work",
+      "subject": "user:work",
+      "key": "language.preference",
+      "content": "The user prefers Python for general work.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 1; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "client.language",
+      "content": "Harbor has an accepted decision to implement the client in TypeScript.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 2; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

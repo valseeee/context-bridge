@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:50:02+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/notes.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "project.purpose",
+      "content": "Harbor 是一个本地文档搜索工具。",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [{"source_id": "s1", "locator": "第 1–2 行（未标注说话人）"}],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "constraint",
+      "area": "constraint",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "runtime.offline",
+      "content": "用户明确说明：Harbor 必须离线运行。",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [{"source_id": "s1", "locator": "第 3 行（用户）"}],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-003",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.choice",
+      "content": "用户已确定使用 SQLite，原因是 Harbor 必须离线运行。",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [{"source_id": "s1", "locator": "第 3 行（用户）"}],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-004",
+      "category": "constraint",
+      "area": "constraint",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "documents.preservation",
+      "content": "绝不删除原始文档。",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [{"source_id": "s1", "locator": "第 4 行（未标注说话人）"}],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-005",
+      "category": "fact",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "indexing.incremental",
+      "content": "原文将增量索引列为下一步工作，并说明它尚未完成。",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [{"source_id": "s1", "locator": "第 5 行（未标注说话人）"}],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

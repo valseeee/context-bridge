@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible ContextBridge problem using synthetic inputs.
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include private transcripts, personal context or real credentials. See SECURITY.md for sensitive reports."
+  - type: input
+    id: environment
+    attributes:
+      label: Host, version and operating system
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Synthetic reproduction and steps
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

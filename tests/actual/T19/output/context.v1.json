@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-01T10:00:00Z",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s-old",
+      "label": "accepted-decision.md",
+      "kind": "file",
+      "date": "2026-05-20"
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-original",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.index",
+      "content": "Harbor uses a JSON-file search index.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s-old",
+          "locator": "L2"
+        }
+      ],
+      "date": "2026-05-20",
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:42:44+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/notes.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "temporary",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "demo.schedule",
+      "content": "A temporary Harbor arrangement dated 2026-04-30 scheduled a demo for 2026-05-01; the note's \"tomorrow\" refers to that date. As of 2026-11-05, the scheduled date has passed, so the arrangement is stale as an active task. The source does not establish whether the demo occurred, was canceled, or was rescheduled.",
+      "status": "stale",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2"
+        }
+      ],
+      "date": "2026-04-30",
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "constraint",
+      "area": "constraint",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "source_documents.preservation",
+      "content": "The Harbor notes state a permanent constraint: never modify source documents. Retain this constraint as current context as of 2026-11-05: it has no stated expiry, and no withdrawal or replacement is supplied.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 3"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

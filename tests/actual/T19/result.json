@@ -1,0 +1,19 @@
+{
+  "id": "T19",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/context.json",
+    "output/context-package/DECISIONS.md",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/HISTORY.md",
+    "output/context-package/PROJECT_CONTEXT.md",
+    "output/context-package/README.md",
+    "output/context.v1.json",
+    "output/UPDATE_NOTES.md"
+  ],
+  "duration_seconds": 242.09,
+  "skill_read_observed": true,
+  "trace_sha256": "3a0278054bbb4af873270408597f15fc7f1a8b74ecae35968d7f9041c282be10",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

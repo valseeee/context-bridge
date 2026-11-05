@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:33:29+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/old.md",
+      "kind": "file",
+      "date": "2026-05-01"
+    },
+    {
+      "id": "s2",
+      "label": "input/migration.md",
+      "kind": "file",
+      "date": "2026-10-30"
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "frontend.react_version",
+      "content": "Harbor's accepted frontend decision was React 18.",
+      "status": "historical",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2; document date in line 1"
+        }
+      ],
+      "date": "2026-05-01",
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "frontend.react_version",
+      "content": "Harbor's accepted frontend decision is React 19, replacing the prior React 18 decision.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s2",
+          "locator": "line 2; document date in line 1"
+        }
+      ],
+      "date": "2026-10-30",
+      "sensitivity": "normal",
+      "supersedes": [
+        "ctx-001"
+      ]
+    },
+    {
+      "id": "ctx-003",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "frontend.react_migration.evidence",
+      "content": "The 2026-10-30 migration note reports that the React 18 to React 19 migration is complete and that the checked manifest requires React 19. The manifest itself was not supplied for independent verification.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s2",
+          "locator": "line 2; document date in line 1"
+        }
+      ],
+      "date": "2026-10-30",
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

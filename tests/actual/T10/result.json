@@ -1,0 +1,15 @@
+{
+  "id": "T10",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/context.json",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/OPEN_QUESTIONS.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 303.8,
+  "skill_read_observed": true,
+  "trace_sha256": "189c1ba4dacb901f09a6b19cc4aef62aa51763b1848f320334667117f951506b",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

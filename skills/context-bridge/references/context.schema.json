@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContextBridge portable context v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "scope", "target", "review_status", "sources", "items", "conflicts"],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["1.0"]},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "scope": {"type": "string", "enum": ["project-only", "work", "personal", "full-review"]},
+    "target": {"type": "string", "enum": ["generic", "codex", "claude-code"]},
+    "review_status": {"type": "string", "enum": ["candidate", "approved"]},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
+    "items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/item"}},
+    "conflicts": {"type": "array", "items": {"$ref": "#/$defs/conflict"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "minLength": 1, "maxLength": 80, "pattern": "^[a-z][a-z0-9-]*$"},
+    "text": {"type": "string", "minLength": 1, "maxLength": 8000},
+    "date": {"anyOf": [{"type": "null"}, {"type": "string", "format": "date"}]},
+    "optionalText": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/text"}]},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "label", "kind", "date"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "label": {"$ref": "#/$defs/text"},
+        "kind": {"type": "string", "enum": ["file", "pasted", "conversation"]},
+        "date": {"$ref": "#/$defs/date"}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_id", "locator"],
+      "properties": {
+        "source_id": {"$ref": "#/$defs/id"},
+        "locator": {"$ref": "#/$defs/optionalText"}
+      }
+    },
+    "item": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "category", "area", "scope", "subject", "key", "content", "status", "confidence", "evidence", "date", "sensitivity", "supersedes"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "category": {"type": "string", "enum": ["fact", "preference", "decision", "constraint", "open_question", "historical", "inference", "temporary"]},
+        "area": {"type": "string", "enum": ["user", "project", "decision", "task", "constraint"]},
+        "scope": {"type": "string", "enum": ["project", "work", "personal"]},
+        "subject": {"$ref": "#/$defs/text"},
+        "key": {"$ref": "#/$defs/text"},
+        "content": {"$ref": "#/$defs/text"},
+        "status": {"type": "string", "enum": ["current", "historical", "stale", "conflict"]},
+        "confidence": {"type": "string", "enum": ["verified", "reported", "inferred", "uncertain"]},
+        "evidence": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/evidence"}},
+        "date": {"$ref": "#/$defs/date"},
+        "sensitivity": {"type": "string", "enum": ["normal", "sensitive", "credential"]},
+        "supersedes": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}}
+      }
+    },
+    "conflict": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "item_ids", "question", "resolution"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "item_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "question": {"$ref": "#/$defs/text"},
+        "resolution": {"$ref": "#/$defs/optionalText"}
+      }
+    }
+  }
+}

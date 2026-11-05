@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:43:43+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s-001",
+      "label": "input/a.md",
+      "kind": "file",
+      "date": null
+    },
+    {
+      "id": "s-002",
+      "label": "input/b.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.database",
+      "content": "The source records an accepted Harbor decision: PostgreSQL is the only supported storage database.",
+      "status": "conflict",
+      "confidence": "uncertain",
+      "evidence": [
+        {
+          "source_id": "s-001",
+          "locator": "line 1"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.database",
+      "content": "The source records an accepted Harbor decision: SQLite is the only supported storage database.",
+      "status": "conflict",
+      "confidence": "uncertain",
+      "evidence": [
+        {
+          "source_id": "s-002",
+          "locator": "line 1"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "conf-001",
+      "item_ids": [
+        "ctx-001",
+        "ctx-002"
+      ],
+      "question": "Which accepted decision governs Harbor's only supported storage database (PostgreSQL or SQLite), and what authoritative decision record or explicit owner confirmation establishes it?",
+      "resolution": null
+    }
+  ]
+}

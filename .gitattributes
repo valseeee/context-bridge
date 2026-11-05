@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.zip binary
+# Keep raw synthetic evidence and its recorded byte hashes stable across OSes.
+tests/fixtures/** -text
+tests/actual/** -text

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:35:29+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/notes.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "overview.purpose",
+      "content": "Harbor is a local search tool.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 3; unattributed project description"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "preference",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "communication.progress_language",
+      "content": "For the Harbor project, the user requests progress updates in Chinese.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

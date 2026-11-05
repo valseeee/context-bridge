@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:57:59+00:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/old.md",
+      "kind": "file",
+      "date": "2026-05-01"
+    },
+    {
+      "id": "s2",
+      "label": "input/new.md",
+      "kind": "file",
+      "date": "2026-11-04"
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "frontend.version",
+      "content": "Harbor's accepted decision is that its production frontend uses React 18.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2; document date in line 1"
+        }
+      ],
+      "date": "2026-05-01",
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "open_question",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "frontend.version",
+      "content": "Should Harbor upgrade its production frontend to React 19? The assistant suggested this on 2026-11-04; that discussion explicitly states that no one had approved or implemented the proposal.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s2",
+          "locator": "line 2 (Assistant); document date in line 1"
+        }
+      ],
+      "date": "2026-11-04",
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

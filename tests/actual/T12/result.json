@@ -1,0 +1,16 @@
+{
+  "id": "T12",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/context.json",
+    "output/context-package/CURRENT_TASKS.md",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/PROJECT_CONTEXT.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 116.02,
+  "skill_read_observed": true,
+  "trace_sha256": "c9bfe717c75e3b199541bf7616dce1142d20aa0ed29510d99f105239ad4eb0fa",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

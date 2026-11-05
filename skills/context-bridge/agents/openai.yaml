@@ -1,0 +1,4 @@
+interface:
+  display_name: "ContextBridge"
+  short_description: "Carry project context between AI assistants"
+  default_prompt: "Use $context-bridge to create a portable project context package from the material I provide."

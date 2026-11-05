@@ -1,0 +1,2 @@
+User, message 1: For work, I prefer brief Chinese progress updates.
+User, message 2: Please keep work updates short and in Chinese.

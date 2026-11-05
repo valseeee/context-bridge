@@ -1,0 +1,18 @@
+{
+  "id": "T02",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/CONSTRAINTS.md",
+    "output/context-package/context.json",
+    "output/context-package/CURRENT_TASKS.md",
+    "output/context-package/DECISIONS.md",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/PROJECT_CONTEXT.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 318.28,
+  "skill_read_observed": true,
+  "trace_sha256": "74ff107201f98e9e57ae3985e58e5606976b0520ded56860012b066a147155c6",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

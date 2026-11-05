@@ -1,0 +1,16 @@
+{
+  "id": "T07",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/CONSTRAINTS.md",
+    "output/context-package/context.json",
+    "output/context-package/DECISIONS.md",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 302.68,
+  "skill_read_observed": true,
+  "trace_sha256": "04de8afcdaced48c16ebe2b48d8c87cf417ca57d079df99d1ada72a56f251a70",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

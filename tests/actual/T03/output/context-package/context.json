@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:32:52+00:00",
+  "scope": "work",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "src-001",
+      "label": "input/chat.txt",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "preference",
+      "area": "user",
+      "scope": "work",
+      "subject": "user:primary",
+      "key": "communication.work_progress_updates",
+      "content": "The user prefers brief work progress updates in Chinese.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 1; User, message 1"
+        },
+        {
+          "source_id": "src-001",
+          "locator": "line 2; User, message 2"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:40:05+00:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "source-001",
+      "label": "input/tasks.md",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "pdf_adapter.status",
+      "content": "The Harbor PDF adapter is unfinished.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "source-001",
+          "locator": "line 2, sentence 1"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "fact",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "pdf_adapter.blocker",
+      "content": "Completion of the Harbor PDF adapter is blocked by missing representative samples.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "source-001",
+          "locator": "line 2, sentence 2"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-003",
+      "category": "fact",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "pdf_adapter.next_step",
+      "content": "The recorded next step is to request anonymized sample PDFs from the user.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "source-001",
+          "locator": "line 2, sentence 3"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

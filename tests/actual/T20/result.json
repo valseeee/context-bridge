@@ -1,0 +1,16 @@
+{
+  "id": "T20",
+  "status": "PASS",
+  "failure_notes": [],
+  "artifact_files": [
+    "output/context-package/context.json",
+    "output/context-package/DECISIONS.md",
+    "output/context-package/HANDOFF.md",
+    "output/context-package/PREFERENCES.md",
+    "output/context-package/README.md"
+  ],
+  "duration_seconds": 237.77,
+  "skill_read_observed": true,
+  "trace_sha256": "fe6c55af6f40de1b2603b845462261aec6ca9068ee403c2665c4dfbf263e8a18",
+  "review": "Actual artifacts manually compared with raw fixture and stated semantic criteria before collection."
+}

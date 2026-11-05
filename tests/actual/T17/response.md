@@ -1,0 +1,3 @@
+`input/` is missing, so there are no supplied conversations to package. Please place conversation exports (`.md` or `.txt`) under `input/` so I can create `output/context-package`.
+
+No files were created. The [context-bridge skill](../../../skills/context-bridge/SKILL.md) requires: “If input is empty or inaccessible, request the missing material once; do not invent a project or create empty files.”

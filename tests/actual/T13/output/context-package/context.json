@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:44:50+00:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "src-001",
+      "label": "input/chat.txt",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "scope": "project",
+      "subject": "project:harbor",
+      "status": "current",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 1; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": [],
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "key": "product.description",
+      "content": "Harbor is a local search CLI.",
+      "confidence": "reported"
+    },
+    {
+      "scope": "project",
+      "subject": "project:harbor",
+      "status": "current",
+      "evidence": [
+        {
+          "source_id": "src-001",
+          "locator": "line 1; speaker: User"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": [],
+      "id": "ctx-002",
+      "category": "constraint",
+      "area": "constraint",
+      "key": "operation.offline",
+      "content": "Harbor must work offline.",
+      "confidence": "verified"
+    }
+  ],
+  "conflicts": []
+}

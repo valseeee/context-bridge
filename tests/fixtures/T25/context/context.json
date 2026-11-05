@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:30:07.3889904+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/overview.md",
+      "kind": "file",
+      "date": null
+    },
+    {
+      "id": "s2",
+      "label": "input/decision.md",
+      "kind": "file",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "s3",
+      "label": "input/tasks.txt",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "purpose",
+      "content": "Harbor searches local documentation.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "constraint",
+      "area": "constraint",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "operation.offline",
+      "content": "Harbor must work offline.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2"
+        },
+        {
+          "source_id": "s2",
+          "locator": "lines 1-2"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-003",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "search.engine",
+      "content": "The accepted search decision is to use SQLite FTS5. Hosted search was rejected because Harbor must operate offline.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s2",
+          "locator": "lines 1-2"
+        }
+      ],
+      "date": "2026-06-10",
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-004",
+      "category": "fact",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "pdf.indexing.status",
+      "content": "The task note reports PDF indexing as unfinished.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s3",
+          "locator": "line 1, first sentence"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-005",
+      "category": "fact",
+      "area": "task",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "pdf.adapter.next_step",
+      "content": "The recorded next step is to implement a local PDF text adapter.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s3",
+          "locator": "line 1, second sentence"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

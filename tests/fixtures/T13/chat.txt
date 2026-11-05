@@ -1,0 +1,3 @@
+User: Harbor is a local search CLI and must work offline.
+User: My unrelated hobby is hiking.
+User: Separately, my relative is receiving private medical treatment.

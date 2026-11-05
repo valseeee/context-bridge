@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T12:35:29+08:00",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s1",
+      "label": "input/chat.txt",
+      "kind": "file",
+      "date": null
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-001",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "search.workload",
+      "content": "The user reports that Harbor searches a large local document collection.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 1 (User)"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-002",
+      "category": "inference",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "performance.cache-hypothesis",
+      "content": "The source assistant hypothesizes that an in-memory cache might improve Harbor's query latency. This remains unconfirmed: the assistant explicitly reports that there are no benchmarks yet. The source records no user acceptance or decision to implement a cache.",
+      "status": "current",
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2 (Assistant)"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-003",
+      "category": "open_question",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "performance.cache-validation",
+      "content": "Would an in-memory cache improve Harbor's query latency? This question follows from the assistant's untested hypothesis; no benchmark results are supplied, so neither the existence nor the size of a latency improvement is established.",
+      "status": "current",
+      "confidence": "uncertain",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "locator": "line 2 (Assistant; question derived from the hypothesis and missing benchmarks)"
+        }
+      ],
+      "date": null,
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}

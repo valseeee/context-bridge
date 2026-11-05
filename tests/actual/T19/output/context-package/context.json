@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-05T04:51:59Z",
+  "scope": "project-only",
+  "target": "generic",
+  "review_status": "approved",
+  "sources": [
+    {
+      "id": "s-old",
+      "label": "accepted-decision.md",
+      "kind": "file",
+      "date": "2026-05-20"
+    },
+    {
+      "id": "s-prior-package",
+      "label": "../context.v1.json",
+      "kind": "file",
+      "date": null
+    },
+    {
+      "id": "s-new-decision",
+      "label": "new-decision.md",
+      "kind": "file",
+      "date": "2026-11-01"
+    }
+  ],
+  "items": [
+    {
+      "id": "ctx-original",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.index",
+      "content": "Harbor uses a JSON-file search index.",
+      "status": "historical",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s-old",
+          "locator": "L2"
+        },
+        {
+          "source_id": "s-prior-package",
+          "locator": "/items/0"
+        }
+      ],
+      "date": "2026-05-20",
+      "sensitivity": "normal",
+      "supersedes": []
+    },
+    {
+      "id": "ctx-sqlite-fts5",
+      "category": "decision",
+      "area": "decision",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.index",
+      "content": "Harbor's accepted search-index decision is SQLite FTS5, replacing the JSON-file index.",
+      "status": "current",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source_id": "s-new-decision",
+          "locator": "L2"
+        }
+      ],
+      "date": "2026-11-01",
+      "sensitivity": "normal",
+      "supersedes": [
+        "ctx-original"
+      ]
+    },
+    {
+      "id": "ctx-index-migration-complete",
+      "category": "fact",
+      "area": "project",
+      "scope": "project",
+      "subject": "project:harbor",
+      "key": "storage.index.migration",
+      "content": "The 2026-11-01 decision note reports that the migration to SQLite FTS5 is complete and the old JSON-file index is retired.",
+      "status": "current",
+      "confidence": "reported",
+      "evidence": [
+        {
+          "source_id": "s-new-decision",
+          "locator": "L2"
+        }
+      ],
+      "date": "2026-11-01",
+      "sensitivity": "normal",
+      "supersedes": []
+    }
+  ],
+  "conflicts": []
+}
