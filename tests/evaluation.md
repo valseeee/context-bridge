@@ -9,7 +9,7 @@ scenarios, not a guarantee for every model or real transcript.
 | Check | Result / scope |
 | --- | --- |
 | Live model behavior | 25 fresh Codex CLI sessions, original inputs, actual generated artifacts |
-| Optional helper | 26 unittest cases: 25 passed on local Windows; symlink creation test skipped by OS permissions |
+| Optional helper | 28 unittest cases: 27 passed on local Windows; symlink creation test skipped by OS permissions |
 | Skill format | Bundled skill-creator validator passed; 124-line entrypoint, 259-character description |
 | JSON contract | Draft 2020-12 schema validated using jsonschema; runtime needs no third-party library |
 | Workflow syntax | actionlint passed |
@@ -28,7 +28,9 @@ The main SKILL.md used in every successful workflow run has SHA-256
 `97ec28ed0419bef1f9b9b1029f4deb6b78261ed8ffd352069a13da3e6454dcbf`.
 Exact installed resource hashes are recorded per run. The helper was simplified
 during the batch and its final scanner was extended to generic token/secret
-assignments and short values. The contract stayed the same; the final unit suite,
+assignments and short values. A final compatibility fix accepts fractional-second
+timestamps on Python 3.10 without changing their stored precision; CI now also
+validates the recorded context JSON files. The contract stayed the same; the final unit suite,
 archive smoke test and validation of recorded JSON cover the final helper. This was not an independent human evaluation:
 the author compared the model's outputs with the original fixtures.
 

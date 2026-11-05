@@ -56,10 +56,29 @@ class ContextPackageTests(unittest.TestCase):
                 self.data["items"][0]["date"] = value
                 self.assertTrue(PACKAGE.validate(self.data))
         self.data = copy.deepcopy(BASE)
-        for value in ("2026-01-01T10:00:00", "2026-01-01", "2026-02-30T10:00:00Z"):
+        for value in ("2026-01-01T10:00:00", "2026-01-01", "2026-02-30T10:00:00Z",
+                      "2026-01-01T10:00:00+00:60", "2026-01-01T10:00:00+24:00"):
             with self.subTest(value=value):
                 self.data["generated_at"] = value
                 self.assertTrue(PACKAGE.validate(self.data))
+
+    def test_fractional_timestamp_precision_is_preserved(self):
+        for fraction in ("", ".1", ".12", ".123", ".1234", ".12345", ".123456", ".3889904", ".123456789"):
+            for timezone in ("Z", "+08:00", "-05:30"):
+                value = "2026-11-05T12:30:07" + fraction + timezone
+                with self.subTest(value=value):
+                    self.data["generated_at"] = value
+                    self.assertEqual(PACKAGE.validate(self.data), [])
+                    rendered = json.loads(PACKAGE.build_files(self.data)["context.json"])
+                    self.assertEqual(rendered["generated_at"], value)
+
+    def test_recorded_context_packages_validate(self):
+        paths = [path for path in (ROOT / "tests/actual").glob("*/output/**/*.json")
+                 if path.name in ("context.json", "context.v1.json", "full-review-candidates.json")]
+        self.assertTrue(paths, "Recorded live context packages must be present")
+        for path in paths:
+            with self.subTest(path=path.relative_to(ROOT)):
+                self.assertEqual(PACKAGE.validate(PACKAGE.read_json(path)), [])
 
     def test_missing_source_is_not_fabricated(self):
         self.data["items"][0]["evidence"][0]["source_id"] = "missing-source"

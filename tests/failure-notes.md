@@ -36,3 +36,13 @@ The first dry-run probe searched for a fully expanded path. Codex advertised the
 Skill with `r0/context-bridge/SKILL.md` and a separate root mapping. Parsing that
 entry and mapping confirmed discovery. A catalog check does not by itself prove
 invocation; the live workflow cases provide that evidence.
+
+## Python 3.10 — timestamp precision compatibility
+
+The first CI matrix passed, but review of T02's actual output found a timestamp
+with seven fractional digits. Python 3.10's
+[parser](https://github.com/python/cpython/blob/v3.10.16/Modules/_datetimemodule.c#L705-L718)
+accepts only three or six. The helper now normalizes the value only for parsing,
+preserving the original timestamp in exported JSON. Regression coverage checks
+fractional precision and all recorded context JSON files on both supported CI
+Python versions. Invalid timezone offsets are rejected explicitly.

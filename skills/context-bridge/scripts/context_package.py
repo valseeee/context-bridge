@@ -90,9 +90,14 @@ def sensitive(text):
 def _valid_date(value, timestamp=False):
     try:
         if timestamp:
-            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})", value):
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?"
+                                r"(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)", value):
                 return False
-            return datetime.fromisoformat(value.replace("Z", "+00:00")).tzinfo is not None
+            # Python 3.10 accepts only 3 or 6 fractional digits. Normalize only
+            # the parse input; preserve the original precision in the package.
+            parse_value = re.sub(r"\.(\d+)",
+                                 lambda match: "." + match.group(1)[:6].ljust(6, "0"), value)
+            return datetime.fromisoformat(parse_value.replace("Z", "+00:00")).tzinfo is not None
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
             return False
         date.fromisoformat(value)
